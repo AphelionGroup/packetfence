@@ -27,6 +27,7 @@ use pfconfig::cached_array;
 use pf::authentication;
 use pf::cluster;
 use pf::util;
+use Socket;
 
 use pf::file_paths qw(
     $conf_dir
