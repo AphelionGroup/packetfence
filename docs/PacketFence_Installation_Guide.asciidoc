@@ -3068,13 +3068,18 @@ OpenVAS
 Requirements
 ++++++++++++
 
-You will first need to install OpenVAS along with XYZ and ABC in order to manage OpenVAS remotely via the `omp` command line.
+You will first need to install OpenVAS 9 along with:
+
+* openvas9-manager
+* openvas9-scanner
+
+on a server in order to manage OpenVAS remotely from PacketFence via the `omp` command line.
 
 In order to validate proper connectivity from PacketFence to OpenVAS for remote management, execute the following command (replacing admin by the user you wish to use for PacketFence to communicate with OpenVAS):
 
   # omp -u admin -p 9390 -X "<get_version/>" 
 
-The output of the above command should provide you the version of OpenVAS. Otherwise, ensure all the necessary components are in place for management through the `omp` command line client and that PacketFence is able to communicate with OpenVAS on port 9390.
+The output of the above command should provide you the version of the OpenVAS Manager. Otherwise, ensure all the necessary components are in place for management through the `omp` command line client and that PacketFence is able to communicate with OpenVAS on port 9390.
 
 Configuring the alert
 +++++++++++++++++++++
