@@ -3068,6 +3068,8 @@ OpenVAS
 Requirements
 ++++++++++++
 
+WARNING: This feature is not supported on Debian 8, it will be on Debian 9.
+
 You will first need to install OpenVAS 9 along with:
 
 * openvas9-manager
